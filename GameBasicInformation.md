@@ -32,21 +32,21 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Kin Hei Wong* - 
 
-Projectile Motion & Enemy (Collab with Dylan Wong)
+*Projectile Motion & Enemy* (Collab with Dylan Wong)
 The main enemies of this game fire constant projectiles at the player.
 This is implemented via the Factory Design pattern portion of the course along with the Component Design Pattern.
 
-Scene Transition & Minor UI (Collab with Dylan Wong)
+*Scene Transition & Minor UI* (Collab with Dylan Wong)
 Added Scene Transition (ExitScene) & added HP Elements.
 Adherence to Unity's Component Design Pattern as opposed to Global Controller.
 
-Preliminary Shield Mechanics (Collab with Ricardo)
+*Preliminary Shield Mechanics* (Collab with Ricardo)
 Foundational Shield Mechanics (Taking Damage, Rendering)
 
-General Polishing & Foundations
+*General Polishing & Foundations*
 Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
 
-TileMap & Level  Design
+*TileMap & Level  Design*
 Implementation of TileMaps and Level Design.
 
 

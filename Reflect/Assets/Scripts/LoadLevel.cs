@@ -11,7 +11,7 @@ public class LoadLevel : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Collided!");
+            Debug.Log("Next Level!");
             var levelLoader = this.LevelLoader.GetComponent<LevelLoader>();
             levelLoader.LoadNextLevel();
         }

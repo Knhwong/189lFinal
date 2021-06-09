@@ -12,6 +12,6 @@ public class HPScript : MonoBehaviour
 
     void Update()
     {
-        this.hpText.text =  player.GetComponent<PlayerController>().GetHP().ToString();
+        this.hpText.text =  player.GetComponent<PlayerController>().GetCurrentHealth().ToString();
     }
 }

@@ -28,11 +28,6 @@ public class PlayerController : MonoBehaviour
 
     private float TakeHitTimer = 0.0f;
 
-    public float GetHP()
-    {
-        return this.CurrentHealth;
-    }
-
     private void Start()
     {
         this.PlayerAnimator = this.GetComponent<Animator>();
@@ -89,7 +84,6 @@ public class PlayerController : MonoBehaviour
 
             var levelLoader = this.LevelLoader.GetComponent<LevelLoader>();
             levelLoader.DeathLoad();
-            
         }
         else
         {
@@ -226,5 +220,10 @@ public class PlayerController : MonoBehaviour
     public bool GetDeadStatus()
     {
         return this.GameOver;
+    }
+
+    public float GetCurrentHealth()
+    {
+        return this.CurrentHealth;
     }
 }

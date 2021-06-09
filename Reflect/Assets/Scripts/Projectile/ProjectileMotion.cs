@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectileMotion : MonoBehaviour
 {
+    //Self Explanatory
     public void Fire(Vector2 MuzzleVelocity)
     {
         this.GetComponent<Rigidbody2D>().AddForce(MuzzleVelocity);

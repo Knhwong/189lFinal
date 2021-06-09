@@ -24,6 +24,17 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
+*YiZhen Li* - 
+
+*Ricardo Sun* - 
+
+*Grace Sun* - 
+
+*Kin Hei Wong* - 
+
+*Dylan Wong* -
+
+
 ## User Interface
 
 **Describe your user interface and how it relates to gameplay. This can be done via the template.**
@@ -35,8 +46,16 @@ You should replay any **bold text** with your relevant information. Liberally us
 ## Animation and Visuals
 
 **List your assets including their sources and licenses.**
+Asset Package from Unity store:
+* [Free 2D Mega Pack](https://assetstore.unity.com/packages/2d/free-2d-mega-pack-177430)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42120421.1153387216.1623213960-1737897374.1617173821))
+* [Medieval Warrior Pack 2](https://assetstore.unity.com/packages/2d/characters/medieval-warrior-pack-2-174788)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.219288409.1153387216.1623213960-1737897374.1617173821))
+* [Painted HQ 2D Forest Medieval Background](https://assetstore.unity.com/packages/2d/environments/painted-hq-2d-forest-medieval-background-97738) ([License agreement](https://unity3d.com/legal/as_terms?_ga=2.213980887.1153387216.1623213960-1737897374.1617173821))
+* [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
+* [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
+* [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([Liscense agreement](https://unity3d.com/legal/as_terms)
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
+The three different scenes was created based on one main story that got more difficult after completing each level. The graphic design of the background, level, main character, and the enemies are all closely related to the background story. 
 
 ## Input
 
@@ -73,8 +92,6 @@ You should replay any **bold text** with your relevant information. Liberally us
 **Include links to your presskit materials and trailer.**
 
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
-
-
 
 ## Game Feel
 

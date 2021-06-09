@@ -30,3 +30,7 @@ Our team was founded at UC Davis in a game development course. We had many ideas
 ![GitHub Logo](Reflect/Assets/LevelOneScreenShot.png)
 ![GitHub Logo](Reflect/Assets/LevelTwoScreenShot.png)
 ![GitHub Logo](Reflect/Assets/LevelThreeScreenShot.png)
+
+### Logo
+
+![GitHub Logo](Reflect/Assets/Counter_Attacker_Logo_with_background.png)

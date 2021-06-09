@@ -19,6 +19,6 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 
 ### Screenshots
 
-\graphicspath{ {./Reflect/Assets/LevelOneScreenShot.png} }
+![GitHub Logo](/Assets/LevelOneScreenShot.png)
 
 ### Logo

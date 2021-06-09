@@ -32,12 +32,30 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Kin Hei Wong* - 
 
+Projectile Motion & Enemy (Collab with Dylan Wong)
+The main enemies of this game fire constant projectiles at the player.
+This is implemented via the Factory Design pattern portion of the course along with the Component Design Pattern.
+
+Scene Transition & Minor UI (Collab with Dylan Wong)
+Added Scene Transition (ExitScene) & added HP Elements.
+Adherence to Unity's Component Design Pattern as opposed to Global Controller.
+
+Preliminary Shield Mechanics (Collab with Ricardo)
+Foundational Shield Mechanics (Taking Damage, Rendering)
+
+General Polishing & Foundations
+Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
+
+TileMap & Level  Design
+Implementation of TileMaps and Level Design.
+
+
 *Dylan Wong* -
 
 
 ## User Interface
 
-**Describe your user interface and how it relates to gameplay. This can be done via the template.**
+The user interface is very minamilistic, fitting with the arcadey nature of the game. There is a just a basic menu along with a health bar.
 
 ## Movement/Physics
 
@@ -52,10 +70,11 @@ Asset Package from Unity store:
 * [Painted HQ 2D Forest Medieval Background](https://assetstore.unity.com/packages/2d/environments/painted-hq-2d-forest-medieval-background-97738) ([License agreement](https://unity3d.com/legal/as_terms?_ga=2.213980887.1153387216.1623213960-1737897374.1617173821))
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
-* [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([Liscense agreement](https://unity3d.com/legal/as_terms)
+* [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
-The three different scenes was created based on one main story that got more difficult after completing each level. The graphic design of the background, level, main character, and the enemies are all closely related to the background story. 
+
+The three different scenes was created based on one main story that got more difficult after completing each level. The graphic design of the background, level, main character, and the enemies are all closely related to the background story. We used a coherent set of pixel assets so everything fit together on a meta level, but we also went with a more chaotic, anything goes, artstyle that would fit the frantic gameplay of dodging and blocking many shots. Through this chaos, we could have funny stuff like the enemy design. The fast and snappy gameplay aligns with this, with fast player movement and jumping, along with tracking enemies with fast projectiles.
 
 ## Input
 
@@ -66,6 +85,11 @@ The three different scenes was created based on one main story that got more dif
 ## Game Logic
 
 **Document what game states and game data you managed and what design patterns you used to complete your task.**
+
+We primairly went with the Component Pattern in designing our work, by splitting up mechanics in compartermalized components that held mechanics
+that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation.
+
+Talk about this stuff here!
 
 # Sub-Roles
 

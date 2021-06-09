@@ -17,10 +17,12 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 - Contact: dalong@ucdavis.edu
 - Instruction Manual: **TODO!**
 
+### History
+
+Our team was founded at UC Davis in a game development course. We had many ideas of the games we wanted to develop, and, although several sounded enticing, we decided Counter Attacker would be the perfect first game for our development team. Through the development of this game we have gotten to know one another and have supported each other as we grow as game developers.
+
 ### Screenshots
 
 ![GitHub Logo](Reflect/Assets/LevelOneScreenShot.png)
 ![GitHub Logo](Reflect/Assets/LevelTwoScreenShot.png)
 ![GitHub Logo](Reflect/Assets/LevelThreeScreenShot.png)
-
-### Logo

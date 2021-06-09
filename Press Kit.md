@@ -17,6 +17,10 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 - Contact: dalong@ucdavis.edu
 - Instruction Manual: **TODO!**
 
+### Game Style
+
+Get ready to be teleported back in time! As novice developers, we began with a simple, yet engaging, 2D platformer game. As the game developed, we found ourselves inspired by the nostalgia of the game feel. We were reminded of 90's gaming classics such as _Contra_ and _Super Mario Bros_. So, we decided to lean into this effect, and embrace the 80's/90's game style. From the movement, to the music, the game is designed to bring you back to the classic gaming experience from the dawn of gaming culture.
+
 ### History
 
 Our team was founded at UC Davis in a game development course. We had many ideas of the games we wanted to develop, and, although several sounded enticing, we decided Counter Attacker would be the perfect first game for our development team. Through the development of this game we have gotten to know one another and have supported each other as we grow as game developers.

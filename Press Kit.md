@@ -20,5 +20,7 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 ### Screenshots
 
 ![GitHub Logo](Reflect/Assets/LevelOneScreenShot.png)
+![GitHub Logo](Reflect/Assets/LevelTwoScreenShot.png)
+![GitHub Logo](Reflect/Assets/LevelThreeScreenShot.png)
 
 ### Logo

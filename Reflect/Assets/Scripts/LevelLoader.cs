@@ -5,24 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    [SerializeField]
-    private Animator Transition;
-
-    public float TransitionTime = 1f;
-
-    // Update is called once per frame
-
+    [SerializeField] private Animator Transition;
+    [SerializeField] private float TransitionTime = 1f;
 
     public void LoadNextLevel()
     {
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
+
         if (SceneManager.GetActiveScene().buildIndex <= 1)
         {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         }
         else
         {
-        StartCoroutine(LoadLevel(0));
+            StartCoroutine(LoadLevel(0));
         }
     }
 
@@ -42,7 +38,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator DeathLoadLevel(int levelIndex)
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(10.0f);
 
         this.Transition.SetTrigger("Start");
 

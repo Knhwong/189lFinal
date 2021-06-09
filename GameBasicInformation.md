@@ -103,9 +103,10 @@ Talk about this stuff here!
 
 ## Gameplay Testing
 
-**Add a link to the full results of your gameplay tests.**
+https://docs.google.com/document/d/1C1JtMZfvX7OqyhI6QGa9GF-D-K68Z0L3vE8aqQPocDU/edit?usp=sharing
 
-**Summarize the key findings from your gameplay tests.**
+All core functionality works and the game is playable. However, minor bugs exist with some clipping into walls, while difficulty may be too much,
+however because parrying is free, it balances out.
 
 ## Narrative Design
 

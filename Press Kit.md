@@ -2,7 +2,7 @@
 # _Press Kit_
 ## Counter Attacker
 
-Welcome to our game! Our game is a 2D platform game that is inspired by classic games such as _Contra_ and _Super Mario Bros_. While brainstorming, we had the idea to implement the Block/Reflect design from the _Dark Souls_ series and the _Sekiro:Shadows Die Twice_. We then combined these elements to form our own game.
+Welcome to our game! Our game is a 2D platform game that is inspired by classic games such as _Contra_ and _Super Mario Bros_. While brainstorming, we had the idea to implement the Block/Reflect design from the _Dark Souls_ series and the _Sekiro:Shadows Die Twice_. We then combined these elements to form our own unique game. In Counter Attacker, you will fight through levels of enemies armed with projectile launchers, but you will only have a shield to defend yourself! Luckily, your shield wielding ability is well-honed, and your shield is large and strong -- but not impervious! You shield will break if you do not time its use just right. Reflect the enemies projectiles back at them to defeat them and progress through the levels. Beat all three levels to save your dog!
 
 ### Game Facts
 

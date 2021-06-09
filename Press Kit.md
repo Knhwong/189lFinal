@@ -6,6 +6,7 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 
 ### Game Facts
 
+- Developer Team: Puppy Savior
 - Developers: Grace Sun, Ricardo Sun, Kin Hei Wong, Yizhen Liu, Dylan Long
 - Release Date: June 9, 2021 (Windows, OSX)
 - Platforms: PC

@@ -10,7 +10,7 @@ The control of this game is very simple. There are four buttons to press in tota
 
 How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield. The player can work with the shield repair cool down and block all the attacks, or he/she can master the skill of counter-attacking. The play style is quite free.
 
-# Main Roles #
+# Roles Overview #
 
 **Yizhen Liu** - 
 
@@ -93,7 +93,9 @@ I implemented an ADSR Manager using the Professor's template. We used this initi
 I implemented a scene loading script along with game objects which causes the game to trigger a fade-to-black scene switch at the end of each level. This was done using a Youtube video as a guide. It occurs at the beginning of the game and at the end of each level when the playe collides with a hidden game object. The fading was done using the Unity animator.
 
 *Game Concepts* -
-Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc. 
+Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc.
+
+# Main Roles #
 
 ## User Interface
 

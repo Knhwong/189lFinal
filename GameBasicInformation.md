@@ -127,7 +127,7 @@ His shield is supposed to make the player seem like a simple person. He is not a
 
 ## Press Kit and Trailer
 
-Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md
+Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md  
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
 
 ## Game Feel

@@ -23,9 +23,9 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-*YiZhen Li* - 
+**YiZhen Li** - 
 
-*Ricardo Sun* - 
+**Ricardo Sun** - 
 
 *Shield Mechanics* (Collab with Kin Hei Wong) -
 The shield works in two ways and should difference between a normal and a perfect block.
@@ -40,10 +40,10 @@ Finding the player and enemy characters and set the logic for playing the correc
 Find and implement sound effects for player movement, shield actions, projectiles, as well as the back ground music.
 
 *Final Pollishing* -
-Pollish the game and fix a few bugs.  
+Pollish the game and fix a few bugs.
 
 
-*Grace Sun* - 
+**Grace Sun** - 
 
 *Background Design* -
 Designed three levels that unit with each other. 
@@ -55,10 +55,10 @@ Designed and chose the right figure design for the main charater. Draw the sheil
 Implemented the animation of the main character that is able to act different with different movement.
 
 *Enemy Design* -
-Designed and chose the right figure design for enemies that shoot balls to the main charater.  
+Designed and chose the right figure design for enemies that shoot balls to the main charater.
 
 
-*Kin Hei Wong* - 
+**Kin Hei Wong** - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
@@ -75,10 +75,10 @@ Foundational Shield Mechanics (Taking Damage, Rendering)
 Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
 
 *TileMap & Level  Design*
-Implementation of TileMaps and Level Design.  
+Implementation of TileMaps and Level Design.
 
 
-*Dylan Long* -
+**Dylan Long** -
 
 *Projectiles* (Game Physics)
 I was the primary developer for this aspect of the game. I implemented the reflection of the projectiles, and their attributes. I implemented a vector difference approach which a normalized vector aimed directly at the enemy. This vector is then scaled by the velocity attribute. So we control how fast each each enemy fires at the player, and projectiles will always fire directly at the player. There is projectile firing script which controls the prodouction of projectiles and is attached to the projectile launcher, and then there is a projectile controller for each projectile. Information about the projectile is passed to the projectile controller from the projectile firing script. 
@@ -90,7 +90,7 @@ I implemented an ADSR Manager using the Professor's template. We used this initi
 I implemented a scene loading script along with game objects which causes the game to trigger a fade-to-black scene switch at the end of each level. This was done using a Youtube video as a guide. It occurs at the beginning of the game and at the end of each level when the playe collides with a hidden game object. The fading was done using the Unity animator.
 
 *Game Concepts* -
-Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc. 
+Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc.
 
 ## User Interface
 

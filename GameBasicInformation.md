@@ -46,10 +46,13 @@ Pollish the game and fix a few bugs.
 *Grace Sun* - 
 
 *Background Design* -
-Designed three levels that unite with each other.
+Designed three levels that unit with each other. 
 
 *Character Design* (Collab with Ricardo) -
 Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
+
+*Character Animation* (Collab with Ricardo) -
+Implemented the animation of the main character that is able to act different with different movement.
 
 *Enemy Design* -
 Designed and chose the right figure design for enemies that shoot balls to the main charater.

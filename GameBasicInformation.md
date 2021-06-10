@@ -35,6 +35,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
 This is implemented via the Factory Design pattern portion of the course along with the Component Design Pattern.
+Projectiles' damage and speed can be set as a spec while their actual prefab is defined by the factory, thus compartmentalizing the code within projectiles rather than making it dependent on the enemy and fire controller.
 
 *Scene Transition & Minor UI* (Collab with Dylan Long)
 Added Scene Transition (ExitScene) & added HP Elements.
@@ -44,7 +45,7 @@ Adherence to Unity's Component Design Pattern as opposed to Global Controller.
 Foundational Shield Mechanics (Taking Damage, Rendering)
 
 *General Polishing & Foundations*
-Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
+Created the base architecture of most of the game (Shield, Player, Enemy, Projectile) along with the prefabs and gameobject, most stuff is then further refined by other members.
 
 *TileMap & Level  Design*
 Implementation of TileMaps and Level Design.

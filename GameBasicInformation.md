@@ -28,6 +28,22 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Ricardo Sun* - 
 
+*Shield Mechanics* (Collab with Kin Hei Wong) -
+The shield works in two ways and should difference between a normal and a perfect block.
+
+*User Input* (Collab with Dylan Long) -
+The user input are accepted and connected to the player movenment, including jumping, moving on x-axis, and holding/unholding shield.
+
+*Character Animation* (Collab with Grace Sun)
+Finding the player and enemy characters and set the logic for playing the correct animations.
+
+*Audio* -
+Find and implement sound effects for player movement, shield actions, projectiles, as well as the back ground music.
+
+*Final Pollishing* -
+Pollish the game and fix a few bugs.
+
+
 *Grace Sun* - 
 
 *Background Design* -

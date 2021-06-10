@@ -121,13 +121,6 @@ The movement in the game is simple and similar to classic games such as Mario. T
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
 * [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
-* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
-* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989)([License agreement](https://unity3d.com/legal/as_terms))
-* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
-* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
-* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
-* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
-* [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 
@@ -135,6 +128,7 @@ The three different scenes was created based on one main story that got more dif
 
 ## Input
 
+The Input is quite simple. Moving right, left, and jumping are just like any other 2D platformer games. The holding shield input is also not complicated. When receiving the user input, just toggle the renderer and the collider of the shield such that it is not in effect.  
 Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
 Shield Up: Left mouse click or left ctrl  
 Jump: Space Bar
@@ -153,6 +147,13 @@ Talk about this stuff here!
 ## Audio
 
 **List your assets including their sources and licenses.**
+* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
+* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989)([License agreement](https://unity3d.com/legal/as_terms))
+* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
+* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
+* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
+* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
+* [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
 **Describe the implementation of your audio system.**
 

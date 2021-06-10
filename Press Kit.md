@@ -16,7 +16,9 @@ Welcome to our game! Our game is a 2D platform game that is inspired by classic 
 - ESRB Rating: E for everyone - Contains mild violence
 - File Size: 233 mb
 - Contact: dalong@ucdavis.edu
-- Instruction Manual: **TODO!**
+- Instruction Manual:
+  - Movement: Key `A` or `LeftArrow` to move left. Key `D` or `RightArrow` to move right. Key `Space` to jump.
+  - Hold Shield: Key `LeftMouseClick` or `Fire1` to hold shield.
 
 ### Game Style
 

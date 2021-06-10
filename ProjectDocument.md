@@ -48,7 +48,7 @@ This also follows the command pattern design. [The Command Pattern script](https
 
 *Camera Management* - 
 Make the camera follows smoothly with the player and allows some margins for the player to lead the camera. Also, the camera is limited by the bounds of each map such that it will stop following player when he/she is at most left/right corner. 
-This is inspired by the Exercise 2. [The Command Pattern script](https://github.com/Knhwong/189lFinal/blob/0ff679bacafbc7a6599686ce2853f3ab2fc789df/Reflect/Assets/Scripts/CameraController.cs)
+This is inspired by the Exercise 2. [The Camera Controller script](https://github.com/Knhwong/189lFinal/blob/0ff679bacafbc7a6599686ce2853f3ab2fc789df/Reflect/Assets/Scripts/CameraController.cs)
 
 *Character Animation* (Collab with Grace Sun)
 Finding the player and enemy characters and set the logic for playing the correct animations when idling, jumping, walking, injured, and dead.

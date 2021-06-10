@@ -132,6 +132,7 @@ Some core logics are shown below:
 - Once the projectile is reflected, using the shield to hit it will not accelerate it again. This is also done by the `Reflected` boolean value.
 - Once the player is dead, a `GameOver` boolean value will pass around such that all controls are disabled, the enemies will stop shooting, the projectile will stop interacting with the player, and the BGM will stop and transition to game losing sound effect. Then, the `LevelLoader` will automatically restart the level.
 - Once the enemy is dead, a `Defeated` boolean value will pass around such that it will make a explosion sound and projectiles will stop interacting with it.
+- A empty game object with a dummy box collider was used to detect if the camera reaches the ends of the map and thus should stop following the player.
 
 # Sub-Roles
 
@@ -152,9 +153,7 @@ Another thing worth mentioning is the background music. Before that the game fee
 
 [Testing Document](https://docs.google.com/document/d/1C1JtMZfvX7OqyhI6QGa9GF-D-K68Z0L3vE8aqQPocDU/edit?usp=sharing)
 
-All core functionality works and the game is playable. However, minor bugs exist with some clipping into walls, while difficulty may be too much,
-however because parrying is free, it balances out.  
-After discovering the problems, the bugs are discovered, and the movement clipping into wall bug is fixed.
+All core functionality works and the game is playable. However, minor bugs exist with some clipping into walls. After discovering the problems, the bugs are discovered, and the movement clipping into wall bug is fixed.
 
 ## Narrative Design
 

@@ -134,9 +134,15 @@ The Input is quite simple. Moving right, left, and jumping are just like any oth
 We primairly went with the Component Pattern in designing our work, by splitting up mechanics in compartermalized components that held mechanics
 that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation, and the Command Pattern Design was used for basic player commands.
 
-Some examples worth mentioning here are:  
-When the player is in the air, he cannot jump again, but he can block. This makes the player be able to actively try to reflect the projectiles.  
-When the player touches the enemy, the character will bounce back and damage the player. Within this bound back period, the player cannot move. This increase the difficult for those who want to speed run through the level.  
+Some core logics are shown below:  
+- When the player is in the air, he cannot jump again, but he can block. This is done by `IsOnGround` boolean value which does a simple ground check and update when collision enter with ground. This makes the player be able to actively try to reflect the projectiles.  
+- When the player touches the enemy, the character will bounce back and damage the player. Within this bound back period, the player cannot move. This is done by passing a `KnockBack` boolean that reset to false when the player touches the groud. Otherwise, it is true when the player touches enemy and will disable all controls. This increase the difficult for those who want to speed run through the level.  
+- When paused, a boolean `IsPaused()` is passed to player such that no more actions is allowed.
+- The enemies will have a collider that can detect player once the player enters the trigger. Once detected, the player will also be shot at no matter how far he/she goes. This is done by passing a `PlayerDetected` boolean value.
+- The projectile cannot hurt anything else but the player when it spawned. Only when it is deflected, it then will interact with enemies. This is done by having a `Reflected` boolean value on the projectiles that change to true once perfect-blocked by the shield.
+- Once the projectile is reflected, using the shield to hit it will not accelerate it again. This is also done by the `Reflected` boolean value.
+- Once the player is dead, a `GameOver` boolean value will pass around such that all controls are disabled, the enemies will stop shooting, the projectile will stop interacting with the player, and the BGM will stop and transition to game losing sound effect. Then, the `LevelLoader` will automatically restart the level.
+- Once the enemy is dead, a `Defeated` boolean value will pass around such that it will make a explosion sound and projectiles will stop interacting with it.
 
 # Sub-Roles
 

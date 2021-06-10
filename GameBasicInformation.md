@@ -7,6 +7,7 @@
 ## Gameplay Explanation ##
 
 The control of this game is very simple. There are four buttons to press in total. The "a" key moves the character left. The "d" key moves the character right. The "space" key will make the character, and the left mouse click will hold up the shield.  
+
 How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield that you have in hand and master the mechanic of counter attacking.
 
 # Main Roles #

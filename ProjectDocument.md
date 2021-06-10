@@ -149,7 +149,10 @@ Some core logics are shown below:
 * [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
 Quite a lot of effort were put in to finding the right sound for every action. The walking and jumping sound are relatively easy to find, but the hold out shield sound is quite difficult to find. In the end, I used a card sound, which seems to be irrelavent to shields, but works great for the moment.  
-Another thing worth mentioning is the background music. Before that the game feel was not yet to be determinded. But, once the BGM is set, the entire game feels arcade-ish and retro, which leads to other further design decisions. With that being set, the rest sound effects all follows the retro style and quite a lot of 8-bit SFX are used.
+
+Another thing worth mentioning is the background music. Before that the game feel was not yet to be determinded. But, once the BGM is set, the entire game feels arcade-ish and retro, which leads to other further design decisions. With that being set, the rest sound effects all follows the retro style and quite a lot of 8-bit SFX are used.  
+
+The background music for all the scenes are different. They all come from the same song to make it consistent, but when player is in main menu, the intro is looping and playing. When player is in the first scene, the first drop is looping and playing. The second scene plays the second drop and the third scene plays the third drop. Each drop is more intense than the previous one and that all follow the narrative as well as the progression of the gameplay in terms of difficulty.
 
 ## Gameplay Testing
 
@@ -170,4 +173,6 @@ My inspiration comes from a meme years ago,where gamers seeked for the huge sati
 
 ## Game Feel
 
-**Document what you added to and how you tweaked your game to improve its game feel.**
+- We have a start menu that plays some intro music in the back to prepare the whole game feel for the player. There's also a logo that hints about the narrative and shows the title clearly.
+- The player can pause the game at any time by hitting `ESC`, and exit the pause menu by hitting `ESC` again or click `Resume`. Player can also exit to the main menu by clicking `Main Menu` or restart the level by clicking `Restart` at any time.
+- The camera leaves the player some margin so that the player can lead the camera for a certain amount. Once the player exceeds the margin, the camera will lerp to the player which makes a smooth tracking camera that makes the game feel better.

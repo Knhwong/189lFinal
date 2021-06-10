@@ -23,7 +23,7 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-*Yizhen Liu* - 
+**Yizhen Liu** - 
 
 *User Interface* -
 All necessary UI in the game including menu, health bar, logo etc. I took the inspirations from both exercise 3 and 4.
@@ -37,7 +37,7 @@ The press kit demonstrates the overall info for our game. It is essential and al
 *Final Pollishing* -
 Find and fix bugs. 
 
-*Ricardo Sun* - 
+**Ricardo Sun** - 
 
 *Shield Mechanics* (Collab with Kin Hei Wong) -
 The shield works in two ways and should difference between a normal and a perfect block.
@@ -55,7 +55,7 @@ Find and implement sound effects for player movement, shield actions, projectile
 Pollish the game and fix a few bugs.
 
 
-*Grace Sun* - 
+**Grace Sun** - 
 
 *Background Design* -
 Designed three levels that unit with each other. 
@@ -70,7 +70,7 @@ Implemented the animation of the main character that is able to act different wi
 Designed and chose the right figure design for enemies that shoot balls to the main charater.
 
 
-*Kin Hei Wong* - 
+**Kin Hei Wong** - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
@@ -90,7 +90,7 @@ Created the base architecture (now mostly overwritten) along with most prefabs, 
 Implementation of TileMaps and Level Design.
 
 
-*Dylan Long* -
+**Dylan Long** -
 
 *Projectiles* (Game Physics)
 I was the primary developer for this aspect of the game. I implemented the reflection of the projectiles, and their attributes. I implemented a vector difference approach which a normalized vector aimed directly at the enemy. This vector is then scaled by the velocity attribute. So we control how fast each each enemy fires at the player, and projectiles will always fire directly at the player. There is projectile firing script which controls the prodouction of projectiles and is attached to the projectile launcher, and then there is a projectile controller for each projectile. Information about the projectile is passed to the projectile controller from the projectile firing script. 

@@ -23,7 +23,7 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-*YiZhen Liu* - 
+*Yizhen Liu* - 
 
 *User Interface* -
 All necessary UI in the game including menu, health bar, logo etc. I took the inspirations from both exercise 3 and 4.

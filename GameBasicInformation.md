@@ -129,7 +129,7 @@ The three different scenes was created based on one main story that got more dif
 ## Input
 
 Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
-Shield Up: Left mouse click or left ctrl
+Shield Up: Left mouse click or left ctrl  
 Jump: Space Bar
 
 ## Game Logic

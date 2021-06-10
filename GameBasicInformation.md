@@ -6,10 +6,9 @@
 
 ## Gameplay Explanation ##
 
-**In this section, explain how the game should be played. Treat this as a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.**
+The control of this game is very simple. There are four buttons to press in total. The "a" key moves the character left. The "d" key moves the character right. The "space" key will make the character, and the left mouse click will hold up the shield.  
 
-
-**If you did work that should be factored in to your grade that does not fit easily into the proscribed roles, add it here! Please include links to resources and descriptions of game-related material that does not fit into roles here.**
+How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield that you have in hand and master the mechanic of counter attacking.
 
 # Main Roles #
 
@@ -24,23 +23,54 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-*YiZhen Li* - 
+**Yizhen Liu** - 
 
-*Ricardo Sun* - 
+*User Interface* -
+All necessary UI in the game including menu, health bar, logo etc. I took the inspirations from both exercise 3 and 4.
 
-*Grace Sun* - 
+*Trailer* -
+My job is range from scripting to video-editing. I learned from the professor's examples of successful game trailers and promotions.
 
-*Background Design* 
-Designed three levels that unite with each other.
+*Press Kit* (Collab with Dylan Long) -
+The press kit demonstrates the overall info for our game. It is essential and also serious for the publishers.
 
-*Character Design* (Collab with Ricardo)
+*Final Pollishing* -
+Find and fix bugs. 
+
+**Ricardo Sun** - 
+
+*Shield Mechanics* (Collab with Kin Hei Wong) -
+The shield works in two ways and should difference between a normal and a perfect block.
+
+*User Input* (Collab with Dylan Long) -
+The user input are accepted and connected to the player movenment, including jumping, moving on x-axis, and holding/unholding shield.
+
+*Character Animation* (Collab with Grace Sun)
+Finding the player and enemy characters and set the logic for playing the correct animations.
+
+*Audio* -
+Find and implement sound effects for player movement, shield actions, projectiles, as well as the back ground music.
+
+*Final Pollishing* -
+Pollish the game and fix a few bugs.
+
+
+**Grace Sun** - 
+
+*Background Design* -
+Designed three levels that unit with each other. 
+
+*Character Design* (Collab with Ricardo) -
 Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
 
-*Enemy Design*
+*Character Animation* (Collab with Ricardo) -
+Implemented the animation of the main character that is able to act different with different movement.
+
+*Enemy Design* -
 Designed and chose the right figure design for enemies that shoot balls to the main charater.
 
 
-*Kin Hei Wong* - 
+**Kin Hei Wong** - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
@@ -60,7 +90,7 @@ Created the base architecture (now mostly overwritten) along with most prefabs, 
 Implementation of TileMaps and Level Design.
 
 
-*Dylan Long* -
+**Dylan Long** -
 
 *Projectiles* (Game Physics)
 I was the primary developer for this aspect of the game. I implemented the reflection of the projectiles, and their attributes. I implemented a vector difference approach which a normalized vector aimed directly at the enemy. This vector is then scaled by the velocity attribute. So we control how fast each each enemy fires at the player, and projectiles will always fire directly at the player. There is projectile firing script which controls the prodouction of projectiles and is attached to the projectile launcher, and then there is a projectile controller for each projectile. Information about the projectile is passed to the projectile controller from the projectile firing script. 
@@ -76,7 +106,7 @@ Took part in the decisions regarding the functionality of the shield, enemy firi
 
 ## User Interface
 
-The user interface is very minamilistic, fitting with the arcadey nature of the game. There is a just a basic menu along with a health bar.
+The user interface is very minamilistic, fitting with the arcadey nature of the game. I designed a main menu, pause menu and player health bar/ shield bar. And I considered the users'need to restart the level or leave the game during the gameplay. The overall design is retro, arcade-like. 
 
 ## Movement/Physics
 
@@ -85,7 +115,6 @@ The movement in the game is simple and similar to classic games such as Mario. T
 ## Animation and Visuals
 
 **List your assets including their sources and licenses.**
-Asset Package from Unity store:
 * [Free 2D Mega Pack](https://assetstore.unity.com/packages/2d/free-2d-mega-pack-177430)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42120421.1153387216.1623213960-1737897374.1617173821))
 * [Medieval Warrior Pack 2](https://assetstore.unity.com/packages/2d/characters/medieval-warrior-pack-2-174788)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.219288409.1153387216.1623213960-1737897374.1617173821))
 * [Painted HQ 2D Forest Medieval Background](https://assetstore.unity.com/packages/2d/environments/painted-hq-2d-forest-medieval-background-97738) ([License agreement](https://unity3d.com/legal/as_terms?_ga=2.213980887.1153387216.1623213960-1737897374.1617173821))
@@ -99,8 +128,9 @@ The three different scenes was created based on one main story that got more dif
 
 ## Input
 
+The Input is quite simple. Moving right, left, and jumping are just like any other 2D platformer games. The holding shield input is also not complicated. When receiving the user input, just toggle the renderer and the collider of the shield such that it is not in effect.  
 Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
-Shield Up: Left mouse click or left ctrl
+Shield Up: Left mouse click or left ctrl  
 Jump: Space Bar
 
 ## Game Logic
@@ -117,6 +147,13 @@ Talk about this stuff here!
 ## Audio
 
 **List your assets including their sources and licenses.**
+* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
+* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989)([License agreement](https://unity3d.com/legal/as_terms))
+* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
+* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
+* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
+* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
+* [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
 **Describe the implementation of your audio system.**
 
@@ -138,7 +175,9 @@ His shield is supposed to make the player seem like a simple person. He is not a
 ## Press Kit and Trailer
 
 Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md  
-**Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
+Trailer: https://www.youtube.com/watch?v=MCESlzAYfKo&ab_channel=EdwardsLau
+
+My inspiration comes from a meme years ago,where gamers seeked for the huge satisfaction from upgrading the computer hardware like GPU or RAM. Since we are creating a retro arcarde game, we want to minimize the pc specification requirement. So that our users could enjoy the game from no matter laptop 20 years ago or the latest gaming beast. In our trailer, I draw a strong contrast from the latest 3A games, which require strong pc setups, to our games, which is light-weighted but also interesting. I tried to find a 80s VHS video effect to attract audience's attention. In the press kit, the screen shots shows all game elements that are included in our game: protagonist, enemies, weapons and scenes. These well-chosen moments will definietly catch your eyes!
 
 ## Game Feel
 

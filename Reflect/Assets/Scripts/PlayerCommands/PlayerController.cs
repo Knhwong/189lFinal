@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip HoldShieldSound;
     [SerializeField] private GameObject LevelLoader;
     [SerializeField] private GameObject PauseUI;
-    // [SerializeField] private HealthBar HealthBar;
+    [SerializeField] private HealthBar HealthBar;
 
     private IPlayerCommand MoveLeft;
     private IPlayerCommand MoveRight;
@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         this.Jump = ScriptableObject.CreateInstance<JumpCommand>();
 
         this.CurrentHealth = this.PlayerHealth;
+        this.HealthBar.SetMaxHealth(this.PlayerHealth);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -125,7 +126,7 @@ public class PlayerController : MonoBehaviour
                 this.PlayerAudio.PlayOneShot(this.MoveSound, 0.5f);
             }
 
-            // this.HealthBar.SetHealth(this.CurrentHealth);
+            this.HealthBar.SetHealth(this.CurrentHealth);
         }
     }
 

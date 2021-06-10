@@ -30,16 +30,6 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Grace Sun* - 
 
-*Background Design* 
-Designed three levels that unite with each other.
-
-*Character Design* (Collab with Ricardo)
-Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
-
-*Enemy Design*
-Designed and chose the right figure design for enemies that shoot balls to the main charater.
-
-
 *Kin Hei Wong* - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)
@@ -79,8 +69,6 @@ Took part in the decisions regarding the functionality of the shield, enemy firi
 The user interface is very minamilistic, fitting with the arcadey nature of the game. There is a just a basic menu along with a health bar.
 
 ## Movement/Physics
-
-**Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your movement scripts that do not use the physics system?** 
 
 The movement in the game is simple and similar to classic games such as Mario. The player can move left right and jump. During a jump the player can change directions. This simple model worked perfectly for our game because the focal point of the physics of the game is the use of the shield. It was decided that the shield must be held up instantaneously in order for the player to be able to block rapidly fired projectiles without simply holding the shield up constantly. The goal here is to incentivize the player to time the shield blocks which makes the game more exciting.
 
@@ -139,8 +127,7 @@ His shield is supposed to make the player seem like a simple person. He is not a
 
 ## Press Kit and Trailer
 
-**Include links to your presskit materials and trailer.**
-
+Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
 
 ## Game Feel

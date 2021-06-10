@@ -35,7 +35,6 @@ You should replay any **bold text** with your relevant information. Liberally us
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
 This is implemented via the Factory Design pattern portion of the course along with the Component Design Pattern.
-Projectiles' damage and speed can be set as a spec while their actual prefab is defined by the factory, thus compartmentalizing the code within projectiles rather than making it dependent on the enemy and fire controller.
 
 *Scene Transition & Minor UI* (Collab with Dylan Long)
 Added Scene Transition (ExitScene) & added HP Elements.
@@ -45,7 +44,7 @@ Adherence to Unity's Component Design Pattern as opposed to Global Controller.
 Foundational Shield Mechanics (Taking Damage, Rendering)
 
 *General Polishing & Foundations*
-Created the base architecture of most of the game (Shield, Player, Enemy, Projectile) along with the prefabs and gameobject, most stuff is then further refined by other members.
+Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
 
 *TileMap & Level  Design*
 Implementation of TileMaps and Level Design.
@@ -125,6 +124,8 @@ however because parrying is free, it balances out.
 ## Narrative Design
 
 **Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
+The idea is that the main character has to go on a great adventure across the world in order to find his dog. The background is supposed to influence the player's feeling of progressing through a hellish place (level 1), then a softer place (level 2), and finally a climactically dangerous place (level 3). We wanted the feel to be similar to Frodo travelling across Middle Earth. This was to emphasize the passion for his dog and a willingness to go to incredible lengths.  
+His shield is supposed to make the player seem like a simple person. He is not a fighter. However, he has this particular skill which can be used for combat in a passive sort of way.
 
 ## Press Kit and Trailer
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player.Command;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip MoveSound;
     [SerializeField] private AudioClip HoldShieldSound;
     [SerializeField] private GameObject LevelLoader;
+    [SerializeField] private GameObject PauseUI;
+    // [SerializeField] private HealthBar HealthBar;
+
+    private IPlayerCommand MoveLeft;
+    private IPlayerCommand MoveRight;
+    private IPlayerCommand Jump;
 
     private Animator PlayerAnimator;
     private Rigidbody2D PlayerRigidBody2D;
@@ -33,6 +40,11 @@ public class PlayerController : MonoBehaviour
         this.PlayerAnimator = this.GetComponent<Animator>();
         this.PlayerRigidBody2D = this.GetComponent<Rigidbody2D>();
         this.PlayerAudio = this.GetComponent<AudioSource>();
+
+        this.MoveLeft = ScriptableObject.CreateInstance<MoveLeftCommand>();
+        this.MoveRight = ScriptableObject.CreateInstance<MoveRightCommand>();
+        this.Jump = ScriptableObject.CreateInstance<JumpCommand>();
+
         this.CurrentHealth = this.PlayerHealth;
     }
 
@@ -80,7 +92,7 @@ public class PlayerController : MonoBehaviour
             this.GameOver = true;
             this.CurrentHealth = 0.0f;
             this.PlayerAnimator.SetBool("Dead", this.GameOver);
-            this.PlayerAudio.PlayOneShot(this.DeathSound, 0.75f);
+            this.PlayerAudio.PlayOneShot(this.DeathSound, 0.5f);
 
             var levelLoader = this.LevelLoader.GetComponent<LevelLoader>();
             levelLoader.DeathLoad();
@@ -89,55 +101,31 @@ public class PlayerController : MonoBehaviour
         {
             this.TakeHitTimer = 0.0f;
             this.PlayerAnimator.SetBool("Damaged", true);
-            this.PlayerAudio.PlayOneShot(this.HitSound, 0.75f);
+            this.PlayerAudio.PlayOneShot(this.HitSound, 0.5f);
         }
     }
-
-
-
 
     private void Update()
     {
-        this.CheckMovement();
-        this.CheckShieldHolding();
-        this.SetTakeHitAnimation();
+        var isPaused = this.PauseUI.GetComponent<PauseMenu>().GetPauseStatus();
+        var isTransitioning = this.LevelLoader.GetComponent<LevelLoader>().GetTransitionStatus();
 
-        var currentVelocity = Mathf.Abs(this.PlayerRigidBody2D.velocity.x);
-
-        this.PlayerAnimator.SetFloat("Velocity", currentVelocity/10.0f);
-
-        if (currentVelocity != 0.0f && this.IsOnGround && !this.PlayerAudio.isPlaying)
+        if (!isTransitioning && !isPaused)
         {
-            this.PlayerAudio.PlayOneShot(this.MoveSound, 0.75f);
-        }
-    }
+            this.CheckMovement();
+            this.CheckShieldHolding();
+            this.SetTakeHitAnimation();
 
+            var movement = Mathf.Abs(Input.GetAxis("Horizontal"));
 
-    private void Jump()
-    {
-        Debug.Log("Works");
-        this.PlayerRigidBody2D.velocity = new Vector2(this.PlayerRigidBody2D.velocity.x, JumpForce);
-        this.PlayerRigidBody2D.AddForce(new Vector2(0, JumpForce));
-        this.IsOnGround = false;
-        this.PlayerAnimator.SetBool("Jumping", true);
-        this.PlayerAudio.PlayOneShot(this.JumpSound, 0.75f);
-    }
+            this.PlayerAnimator.SetFloat("Velocity", movement);
 
-    private void MoveRight()
-    {
-        this.PlayerRigidBody2D.velocity = new Vector2(this.Speed, this.PlayerRigidBody2D.velocity.y);
-        if (!this.FacingRight)
-        {
-            this.Flip();
-        }
-    }
+            if (movement != 0.0f && this.IsOnGround && !this.PlayerAudio.isPlaying)
+            {
+                this.PlayerAudio.PlayOneShot(this.MoveSound, 0.5f);
+            }
 
-    private void MoveLeft()
-    {
-        this.PlayerRigidBody2D.velocity = new Vector2(-this.Speed, this.PlayerRigidBody2D.velocity.y);
-        if (this.FacingRight)
-        {
-            this.Flip();
+            // this.HealthBar.SetHealth(this.CurrentHealth);
         }
     }
 
@@ -151,17 +139,34 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !this.KnockBack && this.IsOnGround && !this.GameOver)
         {
-            this.Jump();
+            this.Jump.Execute(this.gameObject, this.JumpForce);
+            this.IsOnGround = false;
+            this.PlayerAnimator.SetBool("Jumping", true);
+            this.PlayerAudio.PlayOneShot(this.JumpSound, 0.5f);
         }
 
         if(Input.GetAxis("Horizontal") > 0.01 && !this.KnockBack && !this.GameOver)
         {
-            this.MoveRight();
+            var movement = Input.GetAxis("Horizontal");
+            var detail = movement * Time.deltaTime * this.Speed;
+            this.MoveRight.Execute(this.gameObject, detail);
+
+            if (!this.FacingRight)
+            {
+                this.Flip();
+            }
         }
 
         if(Input.GetAxis("Horizontal") < -0.01 && !this.KnockBack && !this.GameOver)
         {
-            this.MoveLeft();
+            var movement = Input.GetAxis("Horizontal");
+            var detail = movement * Time.deltaTime * this.Speed;
+            this.MoveLeft.Execute(this.gameObject, detail);
+
+            if (this.FacingRight)
+            {
+                this.Flip();
+            }
         }
     }
 
@@ -210,6 +215,11 @@ public class PlayerController : MonoBehaviour
         {
             this.TakeHitTimer += Time.deltaTime;
         }
+    }
+
+    public void SetIsOnGround(bool isOnGround)
+    {
+        this.IsOnGround = isOnGround;
     }
 
     public bool GetShieldStatus()

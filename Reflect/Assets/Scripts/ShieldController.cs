@@ -60,7 +60,7 @@ public class ShieldController : MonoBehaviour
             this.CurrentCapacity = 0.0f;
             this.RechargeTimer = 0.0f;
             this.ShieldAudio.PlayOneShot(this.BreakSound, 0.75f);
-            this.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+            this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
         else

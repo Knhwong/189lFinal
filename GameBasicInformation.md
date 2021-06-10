@@ -40,7 +40,7 @@ Finding the player and enemy characters and set the logic for playing the correc
 Find and implement sound effects for player movement, shield actions, projectiles, as well as the back ground music.
 
 *Final Pollishing* -
-Pollish the game and fix a few bugs.
+Pollish the game and fix a few bugs.  
 
 
 *Grace Sun* - 
@@ -55,7 +55,7 @@ Designed and chose the right figure design for the main charater. Draw the sheil
 Implemented the animation of the main character that is able to act different with different movement.
 
 *Enemy Design* -
-Designed and chose the right figure design for enemies that shoot balls to the main charater.
+Designed and chose the right figure design for enemies that shoot balls to the main charater.  
 
 
 *Kin Hei Wong* - 
@@ -75,7 +75,7 @@ Foundational Shield Mechanics (Taking Damage, Rendering)
 Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
 
 *TileMap & Level  Design*
-Implementation of TileMaps and Level Design.
+Implementation of TileMaps and Level Design.  
 
 
 *Dylan Long* -
@@ -110,6 +110,14 @@ Asset Package from Unity store:
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
 * [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
+* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
+* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
+* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
+* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
+* [8-Bit Sfx](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-sfx-32831#content)([License agreement](https://unity3d.com/legal/as_terms))
+* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989#content)([License agreement](https://unity3d.com/legal/as_terms))
+* [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
+* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 

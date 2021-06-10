@@ -30,13 +30,23 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Grace Sun* - 
 
+*Background Design* 
+Designed three levels that unite with each other.
+
+*Character Design* (Collab with Ricardo)
+Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
+
+*Enemy Design*
+Designed and chose the right figure design for enemies that shoot balls to the main charater.
+
+
 *Kin Hei Wong* - 
 
-*Projectile Motion & Enemy* (Collab with Dylan Wong)
+*Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
 This is implemented via the Factory Design pattern portion of the course along with the Component Design Pattern.
 
-*Scene Transition & Minor UI* (Collab with Dylan Wong)
+*Scene Transition & Minor UI* (Collab with Dylan Long)
 Added Scene Transition (ExitScene) & added HP Elements.
 Adherence to Unity's Component Design Pattern as opposed to Global Controller.
 
@@ -50,8 +60,19 @@ Created the base architecture (now mostly overwritten) along with most prefabs, 
 Implementation of TileMaps and Level Design.
 
 
-*Dylan Wong* -
+*Dylan Long* -
 
+*Projectiles* (Game Physics)
+I was the primary developer for this aspect of the game. I implemented the reflection of the projectiles, and their attributes. I implemented a vector difference approach which a normalized vector aimed directly at the enemy. This vector is then scaled by the velocity attribute. So we control how fast each each enemy fires at the player, and projectiles will always fire directly at the player. There is projectile firing script which controls the prodouction of projectiles and is attached to the projectile launcher, and then there is a projectile controller for each projectile. Information about the projectile is passed to the projectile controller from the projectile firing script. 
+
+*ADSR Manager* (Game Physics) (unused) -
+I implemented an ADSR Manager using the Professor's template. We used this initially, trying to fine tune it to maximize playability. However, we found that the simple in-built movement function worked perfectly, so we ended up removing it.
+
+*Scene Loader* (additional role) -
+I implemented a scene loading script along with game objects which causes the game to trigger a fade-to-black scene switch at the end of each level. This was done using a Youtube video as a guide. It occurs at the beginning of the game and at the end of each level when the playe collides with a hidden game object. The fading was done using the Unity animator.
+
+*Game Concepts* -
+Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc. 
 
 ## User Interface
 
@@ -59,7 +80,7 @@ The user interface is very minamilistic, fitting with the arcadey nature of the 
 
 ## Movement/Physics
 
-**Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your movement scripts that do not use the physics system?**
+The movement in the game is simple and similar to classic games such as Mario. The player can move left right and jump. During a jump the player can change directions. This simple model worked perfectly for our game because the focal point of the physics of the game is the use of the shield. It was decided that the shield must be held up instantaneously in order for the player to be able to block rapidly fired projectiles without simply holding the shield up constantly. The goal here is to incentivize the player to time the shield blocks which makes the game more exciting.
 
 ## Animation and Visuals
 
@@ -78,9 +99,9 @@ The three different scenes was created based on one main story that got more dif
 
 ## Input
 
-**Describe the default input configuration.**
-
-**Add an entry for each platform or input style your project supports.**
+Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
+Shield Up: Left mouse click or left ctrl
+Jump: Space Bar
 
 ## Game Logic
 
@@ -111,11 +132,12 @@ however because parrying is free, it balances out.
 ## Narrative Design
 
 **Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
+The idea is that the main character has to go on a great adventure across the world in order to find his dog. The background is supposed to influence the player's feeling of progressing through a hellish place (level 1), then a softer place (level 2), and finally a climactically dangerous place (level 3). We wanted the feel to be similar to Frodo travelling across Middle Earth. This was to emphasize the passion for his dog and a willingness to go to incredible lengths.  
+His shield is supposed to make the player seem like a simple person. He is not a fighter. However, he has this particular skill which can be used for combat in a passive sort of way.
 
 ## Press Kit and Trailer
 
-**Include links to your presskit materials and trailer.**
-
+Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md  
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
 
 ## Game Feel

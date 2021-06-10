@@ -250,7 +250,6 @@ GameObject:
   - component: {fileID: 7501880959166183944}
   - component: {fileID: 7501880959166183945}
   - component: {fileID: 7501880959166183946}
-  - component: {fileID: 2623347178553243386}
   m_Layer: 0
   m_Name: ProjectileSpawn
   m_TagString: Untagged
@@ -284,12 +283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9acd8ed97a778d4cb73cbe7dfd7a28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6314336860104245028}
-  projectileDamage: 20
-  projectileFireFrequency: 2
-  projectileVelocity: 400
-  fireSound: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
-  projectileFactory: {fileID: 2623347178553243386}
+  Projectile: {fileID: 7922420446501619498, guid: 8ef464710c95a59428c45d753d46eb4c, type: 3}
+  Enemy: {fileID: 6314336860104245028}
+  ProjectileDamage: 20
+  ProjectileFireFrequency: 2
+  ProjectileVelocity: 400
+  FireSound: {fileID: 8300000, guid: d9419ba0bfac1e84a95418ac5851caf6, type: 3}
 --- !u!58 &7501880959166183945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -327,16 +326,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2623347178553243386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501880959166183940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9babc506f636948ad8fb3f19caa043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 7922420446501619498, guid: 8ef464710c95a59428c45d753d46eb4c, type: 3}

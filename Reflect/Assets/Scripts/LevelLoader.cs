@@ -8,11 +8,13 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private Animator Transition;
     [SerializeField] private float TransitionTime = 1f;
 
+    private bool IsTransitioning;
+
     public void LoadNextLevel()
     {
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
-        if (SceneManager.GetActiveScene().buildIndex <= 1)
+        if (SceneManager.GetActiveScene().buildIndex <= 2)
         {
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         }
@@ -31,21 +33,32 @@ public class LevelLoader : MonoBehaviour
     {
         this.Transition.SetTrigger("Start");
 
+        this.IsTransitioning = true;
+
         yield return new WaitForSeconds(this.TransitionTime);
 
         SceneManager.LoadScene(levelIndex);
+
+        this.IsTransitioning = false;
     }
 
     IEnumerator DeathLoadLevel(int levelIndex)
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(6.0f);
+
+        this.IsTransitioning = true;
 
         this.Transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(this.TransitionTime);
 
         SceneManager.LoadScene(levelIndex);
+
+        this.IsTransitioning = false;
     }
 
-    
+    public bool GetTransitionStatus()
+    {
+        return this.IsTransitioning;
+    }
 }

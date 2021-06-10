@@ -1,56 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using bullets;
 
 public class ProjectileFire : MonoBehaviour
 {
-    [SerializeField] private GameObject enemy;
-    [SerializeField] private float projectileDamage = 20.0f;
-    [SerializeField] private float projectileFireFrequency = 5.0f;
-    [SerializeField] private float projectileVelocity = 10.0f;
-    [SerializeField] private AudioClip fireSound;
-    [SerializeField] private ProjectileFactory projectileFactory;
+    [SerializeField] private GameObject Projectile;
+    [SerializeField] private GameObject Enemy;
+    [SerializeField] private float ProjectileDamage = 20.0f;
+    [SerializeField] private float ProjectileFireFrequency = 5.0f;
+    [SerializeField] private float ProjectileVelocity = 10.0f;
+    [SerializeField] private AudioClip FireSound;
 
-    private PlayerController playerScript;
-    private EnemyController enemyScript;
+    private PlayerController PlayerScript;
+    private EnemyController EnemyScript;
 
-    private float timeSinceFire;
-    private bool playerDetected;
+    private float TimeSinceFire;
+    private bool PlayerDetected;
 
     private void Start()
     {
-        //Intializing Variables, need to get parent methods from this.enemy.
-        this.timeSinceFire = 0.0f;
-        this.playerDetected = false;
-        this.playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        this.enemyScript = this.enemy.GetComponent<EnemyController>();
+        this.TimeSinceFire = 0.0f;
+        this.PlayerDetected = false;
+        this.PlayerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        this.EnemyScript = this.Enemy.GetComponent<EnemyController>();
     }
 
     private void Update()
     {
-        this.timeSinceFire += Time.deltaTime;
-        if (this.timeSinceFire >= this.projectileFireFrequency && this.playerDetected && !this.playerScript.GetDeadStatus() && !this.enemyScript.GetDefeatStatus())
+        this.TimeSinceFire += Time.deltaTime;
+        if (this.TimeSinceFire >= this.ProjectileFireFrequency && this.PlayerDetected && !this.PlayerScript.GetDeadStatus() && !this.EnemyScript.GetDefeatStatus())
         {
-            //Build Specs
-            var spec = new ProjectileSpec();
-            spec.SetVelocity(this.projectileVelocity);
-            spec.SetDamage(this.projectileDamage);
-            spec.SetFireSound(this.fireSound);
-            //Actual creation of projectile done here.
-            this.projectileFactory.Build(this.transform.position, spec);
-            this.timeSinceFire = 0.0f;
+            var projectile = Instantiate(this.Projectile, this.transform.position, Quaternion.identity);
+            var projectileController = projectile.GetComponent<ProjectileController>();
+            projectileController.SetFireSound(this.FireSound);
+            projectileController.SetDamage(this.ProjectileDamage);
+            projectileController.SetVelocity(this.ProjectileVelocity);
+            Destroy(projectile, 30f);
+
+            this.TimeSinceFire = 0.0f;
         }
     }
 
-    //Player Tracking for Projectile
     private void OnTriggerEnter2D(Collider2D other)
     {   
         if (other.tag == "Player")
         {
-            if (!this.playerDetected)
+            if (!this.PlayerDetected)
             {
-                this.playerDetected = true;
+                Debug.Log("Detect Player");
+                this.PlayerDetected = true;
             }
         }
     }

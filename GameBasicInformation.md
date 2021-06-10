@@ -94,7 +94,7 @@ Took part in the decisions regarding the functionality of the shield, enemy firi
 
 ## User Interface
 
-The user interface is very minamilistic, fitting with the arcadey nature of the game. There is a just a basic menu along with a health bar.
+The user interface is very minamilistic, fitting with the arcadey nature of the game. I designed a main menu, pause menu and player health bar/ shield bar. And I considered the users'need to restart the level or leave the game during the gameplay. The overall design is retro, arcade-like. 
 
 ## Movement/Physics
 
@@ -157,7 +157,8 @@ His shield is supposed to make the player seem like a simple person. He is not a
 
 Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md  
 Trailer: https://www.youtube.com/watch?v=MCESlzAYfKo&ab_channel=EdwardsLau
-**Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
+
+My inspiration comes from a meme years ago,where gamers seeked for the huge satisfaction from upgrading the computer hardware like GPU or RAM. Since we are creating a retro arcarde game, we want to minimize the pc specification requirement. So that our users could enjoy the game from no matter laptop 20 years ago or the latest gaming beast. In our trailer, I draw a strong contrast from the latest 3A games, which require strong pc setups, to our games, which is light-weighted but also interesting. I tried to find a 80s VHS video effect to attract audience's attention. In the press kit, the screen shots shows all game elements that are included in our game: protagonist, enemies, weapons and scenes. These well-chosen moments will definietly catch your eyes!
 
 ## Game Feel
 

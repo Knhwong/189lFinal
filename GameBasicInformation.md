@@ -23,9 +23,20 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-**YiZhen Li** - 
+*YiZhen Liu* - 
+*User Interface* -
+All necessary UI in the game including menu, health bar, logo etc. I took the inspirations from both exercise 3 and 4.
 
-**Ricardo Sun** - 
+*Trailer* -
+My job is range from scripting to video-editing. I learned from the professor's examples of successful game trailers and promotions.
+
+*Press Kit* (Collab with Dylan Long) -
+The press kit demonstrates the overall info for our game. It is essential and also serious for the publishers.
+
+*Final Pollishing* -
+Find and fix bugs. 
+
+*Ricardo Sun* - 
 
 *Shield Mechanics* (Collab with Kin Hei Wong) -
 The shield works in two ways and should difference between a normal and a perfect block.
@@ -43,7 +54,7 @@ Find and implement sound effects for player movement, shield actions, projectile
 Pollish the game and fix a few bugs.
 
 
-**Grace Sun** - 
+*Grace Sun* - 
 
 *Background Design* -
 Designed three levels that unit with each other. 
@@ -58,7 +69,7 @@ Implemented the animation of the main character that is able to act different wi
 Designed and chose the right figure design for enemies that shoot balls to the main charater.
 
 
-**Kin Hei Wong** - 
+*Kin Hei Wong* - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)
 The main enemies of this game fire constant projectiles at the player.
@@ -78,7 +89,7 @@ Created the base architecture (now mostly overwritten) along with most prefabs, 
 Implementation of TileMaps and Level Design.
 
 
-**Dylan Long** -
+*Dylan Long* -
 
 *Projectiles* (Game Physics)
 I was the primary developer for this aspect of the game. I implemented the reflection of the projectiles, and their attributes. I implemented a vector difference approach which a normalized vector aimed directly at the enemy. This vector is then scaled by the velocity attribute. So we control how fast each each enemy fires at the player, and projectiles will always fire directly at the player. There is projectile firing script which controls the prodouction of projectiles and is attached to the projectile launcher, and then there is a projectile controller for each projectile. Information about the projectile is passed to the projectile controller from the projectile firing script. 
@@ -90,7 +101,7 @@ I implemented an ADSR Manager using the Professor's template. We used this initi
 I implemented a scene loading script along with game objects which causes the game to trigger a fade-to-black scene switch at the end of each level. This was done using a Youtube video as a guide. It occurs at the beginning of the game and at the end of each level when the playe collides with a hidden game object. The fading was done using the Unity animator.
 
 *Game Concepts* -
-Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc.
+Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc. 
 
 ## User Interface
 
@@ -110,14 +121,6 @@ Asset Package from Unity store:
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
 * [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
-* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
-* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
-* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
-* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
-* [8-Bit Sfx](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-sfx-32831#content)([License agreement](https://unity3d.com/legal/as_terms))
-* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989#content)([License agreement](https://unity3d.com/legal/as_terms))
-* [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
-* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 

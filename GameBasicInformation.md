@@ -2,11 +2,11 @@
 
 ## Summary ##
 
-**A paragraph-length pitch for your game.**
+Counter Attacker is a unique take on the traditional platformer shooter, whereby instead of firing bullets back at enemy, you only have a shield to block and parry projectiles! Fight through three levels of increasing increasing difficulty through frentic manuevering against multiple enemies, to attain the ultimate prize of victory!
 
 ## Gameplay Explanation ##
 
-**In this section, explain how the game should be played. Treat this as a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.**
+Counter Attacker should be played similar to a traditional platformer, in which your objective is to reach the right end of the map while not dying to the various enemies stationed around the map. Use your shield to block projectiles, time your blocks to perfectly parry a shot back to an enemy to kill them. Use jump to dodge or manuever through the vertical terrain to reach your goal.
 
 
 **If you did work that should be factored in to your grade that does not fit easily into the proscribed roles, add it here! Please include links to resources and descriptions of game-related material that does not fit into roles here.**

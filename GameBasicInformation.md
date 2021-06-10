@@ -30,13 +30,13 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Grace Sun* - 
 
-*Background Design* 
+*Background Design* -
 Designed three levels that unite with each other.
 
-*Character Design* (Collab with Ricardo)
+*Character Design* (Collab with Ricardo) -
 Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
 
-*Enemy Design*
+*Enemy Design* -
 Designed and chose the right figure design for enemies that shoot balls to the main charater.
 
 

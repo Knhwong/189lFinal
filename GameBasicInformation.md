@@ -122,6 +122,12 @@ Asset Package from Unity store:
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
 * [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
+* [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
+* [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989)([License agreement](https://unity3d.com/legal/as_terms))
+* [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
+* [(FREE) Cyberpunk / Sci-Fi Soundtrack](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)([License agreement](https://unity3d.com/legal/as_terms))
+* [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)([License agreement](https://unity3d.com/legal/as_terms))
+* [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 

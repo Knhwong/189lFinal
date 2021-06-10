@@ -70,7 +70,8 @@ The user interface is very minamilistic, fitting with the arcadey nature of the 
 
 ## Movement/Physics
 
-**Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your movement scripts that do not use the physics system?**
+**Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your movement scripts that do not use the physics system?** 
+
 The movement in the game is simple and similar to classic games such as Mario. The player can move left right and jump. During a jump the player can change directions. This simple model worked perfectly for our game because the focal point of the physics of the game is the use of the shield. It was decided that the shield must be held up instantaneously in order for the player to be able to block rapidly fired projectiles without simply holding the shield up constantly. The goal here is to incentivize the player to time the shield blocks which makes the game more exciting.
 
 ## Animation and Visuals
@@ -90,9 +91,9 @@ The three different scenes was created based on one main story that got more dif
 
 ## Input
 
-**Describe the default input configuration.**
-
-**Add an entry for each platform or input style your project supports.**
+Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
+Shield Up: Left mouse click or left ctrl
+Jump: Space Bar
 
 ## Game Logic
 

@@ -55,7 +55,6 @@ Find and implement sound effects for player movement, shield actions, projectile
 *Final Pollishing* -
 Pollish the game and fixed a few bugs involving moving into walls.
 
-
 **Grace Sun** - 
 
 *Background Design* -
@@ -69,7 +68,6 @@ Implemented the animation of the main character that is able to act different wi
 
 *Enemy Design* -
 Designed and chose the right figure design for enemies that shoot balls to the main charater.
-
 
 **Kin Hei Wong** - 
 
@@ -89,7 +87,6 @@ Created the base architecture (now mostly overwritten) along with most prefabs, 
 
 *TileMap & Level Design*
 Implementation of TileMaps and Level Design.
-
 
 **Dylan Long** -
 
@@ -115,15 +112,12 @@ The movement in the game is simple and similar to classic games such as Mario. T
 
 ## Animation and Visuals
 
-**List your assets including their sources and licenses.**
 * [Free 2D Mega Pack](https://assetstore.unity.com/packages/2d/free-2d-mega-pack-177430)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42120421.1153387216.1623213960-1737897374.1617173821))
 * [Medieval Warrior Pack 2](https://assetstore.unity.com/packages/2d/characters/medieval-warrior-pack-2-174788)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.219288409.1153387216.1623213960-1737897374.1617173821))
 * [Painted HQ 2D Forest Medieval Background](https://assetstore.unity.com/packages/2d/environments/painted-hq-2d-forest-medieval-background-97738) ([License agreement](https://unity3d.com/legal/as_terms?_ga=2.213980887.1153387216.1623213960-1737897374.1617173821))
 * [Platformer Fantasy SET1](https://assetstore.unity.com/packages/2d/environments/platformer-fantasy-set1-159063)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.216620758.1153387216.1623213960-1737897374.1617173821))
 * [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009)([License agreement](https://unity3d.com/legal/as_terms?_ga=2.42094693.1153387216.1623213960-1737897374.1617173821))
 * [Bolt 2D LittleWars Assets Pack](https://assetstore.unity.com/packages/2d/characters/bolt-2d-littlewars-assets-pack-189896)([License agreement](https://unity3d.com/legal/as_terms))
-
-**Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 
 The three different scenes was created based on one main story that got more difficult after completing each level. The initial scene is at twilight, which implies the anger of Cayde. The second scene is in daylight which shows the transition of time and the beauty of the environment. The last scene is at cold night, which suggests the end of the story and the diffuculty of the level. The graphic design of the background, tiles, main character, and the enemies are all closely related to the background story. We used a coherent set of pixel assets so everything fit together on a meta level, but we also went with a more chaotic, anything goes, artstyle that would fit the frantic gameplay of dodging and blocking many shots. Through this chaos, we could have funny stuff like the enemy design. The fast and snappy gameplay aligns with this, with fast player movement and jumping, along with tracking enemies with fast projectiles.
 
@@ -133,10 +127,9 @@ The Input is quite simple. Moving right, left, and jumping are just like any oth
 
 ## Game Logic
 
-**Document what game states and game data you managed and what design patterns you used to complete your task.**
-
 We primairly went with the Component Pattern in designing our work, by splitting up mechanics in compartermalized components that held mechanics
-that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation, and the Command Pattern Design was used for basic player commands.  
+that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation, and the Command Pattern Design was used for basic player commands.
+
 Some examples worth mentioning here are:  
 When the player is in the air, he cannot jump again, but he can block. This makes the player be able to actively try to reflect the projectiles.  
 When the player touches the enemy, the character will bounce back and damage the player. Within this bound back period, the player cannot move. This increase the difficult for those who want to speed run through the level.  
@@ -145,7 +138,6 @@ When the player touches the enemy, the character will bounce back and damage the
 
 ## Audio
 
-**List your assets including their sources and licenses.**
 * [SoundBits | Free Sound FX Collection](https://assetstore.unity.com/packages/audio/sound-fx/soundbits-free-sound-fx-collection-31837)([License agreement](https://unity3d.com/legal/as_terms))
 * [UI Sfx](https://assetstore.unity.com/packages/audio/sound-fx/ui-sfx-36989)([License agreement](https://unity3d.com/legal/as_terms))
 * [Classic Footstep SFX](https://assetstore.unity.com/packages/audio/sound-fx/classic-footstep-sfx-173668)([License agreement](https://unity3d.com/legal/as_terms))
@@ -154,16 +146,12 @@ When the player touches the enemy, the character will bounce back and damage the
 * [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
 * [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
-Quite a lot of effort were put in to find the corret sound for every action. The walking and jumping sound are relatively easy to find, but the hold out shield sound is quite difficult to find. In the end, I used a card sound, which seems to be irrelavent to shields, but works great for the moment.  
-Another thing worth mentioning is the background music. Before that the game feel was not yet to be determinded. But, once the BGM is set, the entire game feels arcade-ish and retro, which leads to other further design decisions.
-
-**Describe the implementation of your audio system.**
-
-**Document the sound style.** 
+Quite a lot of effort were put in to finding the right sound for every action. The walking and jumping sound are relatively easy to find, but the hold out shield sound is quite difficult to find. In the end, I used a card sound, which seems to be irrelavent to shields, but works great for the moment.  
+Another thing worth mentioning is the background music. Before that the game feel was not yet to be determinded. But, once the BGM is set, the entire game feels arcade-ish and retro, which leads to other further design decisions. With that being set, the rest sound effects all follows the retro style and quite a lot of 8-bit SFX are used.
 
 ## Gameplay Testing
 
-https://docs.google.com/document/d/1C1JtMZfvX7OqyhI6QGa9GF-D-K68Z0L3vE8aqQPocDU/edit?usp=sharing
+[Testing Document](https://docs.google.com/document/d/1C1JtMZfvX7OqyhI6QGa9GF-D-K68Z0L3vE8aqQPocDU/edit?usp=sharing)
 
 All core functionality works and the game is playable. However, minor bugs exist with some clipping into walls, while difficulty may be too much,
 however because parrying is free, it balances out.  
@@ -171,9 +159,7 @@ After discovering the problems, the bugs are discovered, and the movement clippi
 
 ## Narrative Design
 
-**Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
-The idea is that the main character has to go on a great adventure across the world in order to find his dog. The background is supposed to influence the player's feeling of progressing through a hellish place (level 1), then a softer place (level 2), and finally a climactically dangerous place (level 3). We wanted the feel to be similar to Frodo travelling across Middle Earth. This was to emphasize the passion for his dog and a willingness to go to incredible lengths.  
-His shield is supposed to make the player seem like a simple person. He is not a fighter. However, he has this particular skill which can be used for combat in a passive sort of way.
+The story itself has quite a few inspirations from the John Wick series. As mentioned before, the background image and the tiles of each level hints about the main character's emotion, the difficulty of the game, as well as the time span. The idea is that the main character has to go on a great adventure across the world in order to find his dog. The background is supposed to influence the player's feeling of progressing through a hellish place (level 1), then a softer place (level 2), and finally a climactically dangerous place (level 3). We wanted the feel to be similar to Frodo travelling across Middle Earth. This was to emphasize the passion for his dog and a willingness to go to incredible lengths. And, in the end, through all the danger, he gets his dog back. His shield is supposed to make the player seem like a simple person. He is not a fighter. However, he has this particular skill of counter attacking which can get the job down in a passive way.
 
 ## Press Kit and Trailer
 

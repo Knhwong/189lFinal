@@ -44,7 +44,7 @@ The shield works in two ways and should difference between a normal and a perfec
 
 *User Input* (Collab with Dylan Long) -
 The user input are accepted and connected to the player movenment, including jumping, moving on x-axis, and holding/unholding shield.  
-This also follows the command pattern design. [https://github.com/Knhwong/189lFinal/blob/f8d61aaf0e691c01eb64f626d68a0e7e1d1a187c/Reflect/Assets/Scripts/PlayerCommands/IPlayerCommand.cs]
+This also follows the command pattern design. [The Command Pattern script](https://github.com/Knhwong/189lFinal/blob/f8d61aaf0e691c01eb64f626d68a0e7e1d1a187c/Reflect/Assets/Scripts/PlayerCommands/IPlayerCommand.cs)
 
 *Character Animation* (Collab with Grace Sun)
 Finding the player and enemy characters and set the logic for playing the correct animations when idling, jumping, walking, injured, and dead.

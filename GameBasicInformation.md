@@ -2,13 +2,13 @@
 
 ## Summary ##
 
-**A paragraph-length pitch for your game.**
+Cayde was just a simple man living with his best friend, a dog named Duke. One day, Cayde came home to find his house destroyed and his dog missing. See, Cayde is simple, but he is more than just a normal man. Cayde is the master of counter-attacking. Cayde went to his basement and dug out his old, trusty shield. The enemies are ahead, and Cayde will get his dog back at all costs. The player will play as the character Cayde and step on the path of making through enemies and rescuing his best friend, Duke.
 
 ## Gameplay Explanation ##
 
-The control of this game is very simple. There are four buttons to press in total. The "a" key moves the character left. The "d" key moves the character right. The "space" key will make the character, and the left mouse click will hold up the shield.  
+The control of this game is very simple. There are four buttons to press in total. The "a" key moves the character left. The "d" key moves the character right. The "space" key will make the character, and the left mouse click will hold up the shield. The special skil that Cayde has it to reflect whatever shot at him if he block the projectile right before it hits the shield. Thus, to defeat enemies, player will need to block attacks when necessary. Holding down the shield will also block the attacks, but the shield will not last long. Once it is broken, it requies a few seconds before getting repaired.
 
-How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield that you have in hand and master the mechanic of counter attacking.
+How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield. The player can work with the shield repair cool down and block all the attacks, or he/she can master the skill of counter-attacking. The play style is quite free.
 
 # Main Roles #
 
@@ -40,19 +40,20 @@ Find and fix bugs.
 **Ricardo Sun** - 
 
 *Shield Mechanics* (Collab with Kin Hei Wong) -
-The shield works in two ways and should difference between a normal and a perfect block.
+The shield works in two ways and should difference between a normal and a perfect block. This also corresponds to the shield breaking from too many hits and repairing after a few seconds.
 
 *User Input* (Collab with Dylan Long) -
-The user input are accepted and connected to the player movenment, including jumping, moving on x-axis, and holding/unholding shield.
+The user input are accepted and connected to the player movenment, including jumping, moving on x-axis, and holding/unholding shield.  
+This also follows the command pattern design. [https://github.com/Knhwong/189lFinal/blob/f8d61aaf0e691c01eb64f626d68a0e7e1d1a187c/Reflect/Assets/Scripts/PlayerCommands/IPlayerCommand.cs]
 
 *Character Animation* (Collab with Grace Sun)
-Finding the player and enemy characters and set the logic for playing the correct animations.
+Finding the player and enemy characters and set the logic for playing the correct animations when idling, jumping, walking, injured, and dead.
 
 *Audio* -
-Find and implement sound effects for player movement, shield actions, projectiles, as well as the back ground music.
+Find and implement sound effects for player movement, shield actions, projectiles, enemy interacitons, as well as the back ground music.
 
 *Final Pollishing* -
-Pollish the game and fix a few bugs.
+Pollish the game and fixed a few bugs involving moving into walls.
 
 
 **Grace Sun** - 
@@ -86,7 +87,7 @@ Foundational Shield Mechanics (Taking Damage, Rendering)
 *General Polishing & Foundations*
 Created the base architecture (now mostly overwritten) along with most prefabs, general polishing of other code and game coherence.
 
-*TileMap & Level  Design*
+*TileMap & Level Design*
 Implementation of TileMaps and Level Design.
 
 
@@ -124,23 +125,21 @@ The movement in the game is simple and similar to classic games such as Mario. T
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 
-The three different scenes was created based on one main story that got more difficult after completing each level. The graphic design of the background, level, main character, and the enemies are all closely related to the background story. We used a coherent set of pixel assets so everything fit together on a meta level, but we also went with a more chaotic, anything goes, artstyle that would fit the frantic gameplay of dodging and blocking many shots. Through this chaos, we could have funny stuff like the enemy design. The fast and snappy gameplay aligns with this, with fast player movement and jumping, along with tracking enemies with fast projectiles.
+The three different scenes was created based on one main story that got more difficult after completing each level. The initial scene is at twilight, which implies the anger of Cayde. The second scene is in daylight which shows the transition of time and the beauty of the environment. The last scene is at cold night, which suggests the end of the story and the diffuculty of the level. The graphic design of the background, tiles, main character, and the enemies are all closely related to the background story. We used a coherent set of pixel assets so everything fit together on a meta level, but we also went with a more chaotic, anything goes, artstyle that would fit the frantic gameplay of dodging and blocking many shots. Through this chaos, we could have funny stuff like the enemy design. The fast and snappy gameplay aligns with this, with fast player movement and jumping, along with tracking enemies with fast projectiles.
 
 ## Input
 
-The Input is quite simple. Moving right, left, and jumping are just like any other 2D platformer games. The holding shield input is also not complicated. When receiving the user input, just toggle the renderer and the collider of the shield such that it is not in effect.  
-Movement Left/Right: 'a'/'d' or (left arrow)/(right arrow)  
-Shield Up: Left mouse click or left ctrl  
-Jump: Space Bar
+The Input is quite simple. Moving right, left, and jumping are just like any other 2D platformer games. The holding shield input is also not complicated. When receiving the user input, just toggle the renderer and the collider of the shield such that it is not in effect. One thing worth mentioning is that every input are designed to receive the action immediately as well as when stopping it. This is due to the fact that the game's core concept is related to reaction time, and we want the game to reflect the player's action with minimal delay.
 
 ## Game Logic
 
 **Document what game states and game data you managed and what design patterns you used to complete your task.**
 
 We primairly went with the Component Pattern in designing our work, by splitting up mechanics in compartermalized components that held mechanics
-that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation.
-
-Talk about this stuff here!
+that would interact with each other on a direct basis rather than relying upon a universal gamecontroller. The Factory Pattern was used for Projectile Generation, and the Command Pattern Design was used for basic player commands.  
+Some examples worth mentioning here are:  
+When the player is in the air, he cannot jump again, but he can block. This makes the player be able to actively try to reflect the projectiles.  
+When the player touches the enemy, the character will bounce back and damage the player. Within this bound back period, the player cannot move. This increase the difficult for those who want to speed run through the level.  
 
 # Sub-Roles
 
@@ -155,6 +154,9 @@ Talk about this stuff here!
 * [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)([License agreement](https://unity3d.com/legal/as_terms))
 * [Retro video game sfx - Explode](https://freesound.org/people/OwlStorm/sounds/404754/)([License agreement](https://creativecommons.org/publicdomain/zero/1.0/))
 
+Quite a lot of effort were put in to find the corret sound for every action. The walking and jumping sound are relatively easy to find, but the hold out shield sound is quite difficult to find. In the end, I used a card sound, which seems to be irrelavent to shields, but works great for the moment.  
+Another thing worth mentioning is the background music. Before that the game feel was not yet to be determinded. But, once the BGM is set, the entire game feels arcade-ish and retro, which leads to other further design decisions.
+
 **Describe the implementation of your audio system.**
 
 **Document the sound style.** 
@@ -164,7 +166,8 @@ Talk about this stuff here!
 https://docs.google.com/document/d/1C1JtMZfvX7OqyhI6QGa9GF-D-K68Z0L3vE8aqQPocDU/edit?usp=sharing
 
 All core functionality works and the game is playable. However, minor bugs exist with some clipping into walls, while difficulty may be too much,
-however because parrying is free, it balances out.
+however because parrying is free, it balances out.  
+After discovering the problems, the bugs are discovered, and the movement clipping into wall bug is fixed.
 
 ## Narrative Design
 

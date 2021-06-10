@@ -30,6 +30,16 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Grace Sun* - 
 
+*Background Design* 
+Designed three levels that unite with each other.
+
+*Character Design* (Collab with Ricardo)
+Designed and chose the right figure design for the main charater. Draw the sheild that can counter attack the bullet.
+
+*Enemy Design*
+Designed and chose the right figure design for enemies that shoot balls to the main charater.
+
+
 *Kin Hei Wong* - 
 
 *Projectile Motion & Enemy* (Collab with Dylan Long)

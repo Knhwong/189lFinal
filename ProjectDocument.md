@@ -8,7 +8,7 @@ Cayde was just a simple man living with his best friend, a dog named Duke. One d
 
 The control of this game is very simple. There are four buttons to press in total. The "a" key moves the character left. The "d" key moves the character right. The "space" key will make the character, and the left mouse click will hold up the shield. The special skil that Cayde has it to reflect whatever shot at him if he block the projectile right before it hits the shield. Thus, to defeat enemies, player will need to block attacks when necessary. Holding down the shield will also block the attacks, but the shield will not last long. Once it is broken, it requies a few seconds before getting repaired.
 
-How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to douge all the projectiles and run to the end. Of course, the other way is to work with the shield. The player can work with the shield repair cool down and block all the attacks, or he/she can master the skill of counter-attacking. The play style is quite free.
+How the game should be played is depend on the players. If the player is confident with his/her movement, then he/she can try to dodge all the projectiles and run to the end. Of course, the other way is to work with the shield. The player can work with the shield repair cool down and block all the attacks, or he/she can master the skill of counter-attacking. The play style is quite free.
 
 # Roles Overview #
 
@@ -92,6 +92,9 @@ I implemented an ADSR Manager using the Professor's template. We used this initi
 *Scene Loader* (additional role) -
 I implemented a scene loading script along with game objects which causes the game to trigger a fade-to-black scene switch at the end of each level. This was done using a Youtube video as a guide. It occurs at the beginning of the game and at the end of each level when the playe collides with a hidden game object. The fading was done using the Unity animator.
 
+*Press Kit* (additional role) -
+I was primarily in charge of creating the press kit. I used a couple of the provided press kits as a templates. I did my best to provide screen shots which gave an overview of the game, one from each level.
+
 *Game Concepts* -
 Took part in the decisions regarding the functionality of the shield, enemy firing, player movement, interactions between enemy and player, etc.
 
@@ -167,6 +170,8 @@ The story itself has quite a few inspirations from the John Wick series. As ment
 ## Press Kit and Trailer
 
 Press Kit: https://github.com/Knhwong/189lFinal/blob/main/Press%20Kit.md  
+The screen shots were chosen to be one per level. I tried to give the audience a look at all environments in the game while also demonstrating the two major commands, using the shield and jumping. Additionally, I chose to be a different values of health, and I tried to incorporate as much action from enemies as possible in order to portray the excitement and challenge of the game.
+
 Trailer: https://www.youtube.com/watch?v=MCESlzAYfKo&ab_channel=EdwardsLau
 
 My inspiration comes from a meme years ago,where gamers seeked for the huge satisfaction from upgrading the computer hardware like GPU or RAM. Since we are creating a retro arcarde game, we want to minimize the pc specification requirement. So that our users could enjoy the game from no matter laptop 20 years ago or the latest gaming beast. In our trailer, I draw a strong contrast from the latest 3A games, which require strong pc setups, to our games, which is light-weighted but also interesting. I tried to find a 80s VHS video effect to attract audience's attention. In the press kit, the screen shots shows all game elements that are included in our game: protagonist, enemies, weapons and scenes. These well-chosen moments will definietly catch your eyes!

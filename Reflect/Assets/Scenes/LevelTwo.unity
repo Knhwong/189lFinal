@@ -8945,7 +8945,7 @@ MonoBehaviour:
   MoveSound: {fileID: 8300000, guid: 51f1d62ae5955fc4290909cb3428de03, type: 3}
   HoldShieldSound: {fileID: 8300000, guid: 4f2e605a6bb5a2b468c77061059a7e36, type: 3}
   LevelLoader: {fileID: 1728154864}
-  PauseUI: {fileID: 0}
+  PauseUI: {fileID: 648106333}
 --- !u!82 &1617312094
 AudioSource:
   m_ObjectHideFlags: 0
